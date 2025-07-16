@@ -43,8 +43,8 @@ total = 0
 i = 0
 qty = len(roman)
 
-if qty == 1:
-    total += roman_to_int[roman]
+# if qty == 1:
+#     total += roman_to_int[roman]
 
 while i < qty-1:
     c1 = roman[i]
@@ -59,6 +59,6 @@ while i < qty-1:
         i += 1
 
     if i == qty - 1:  # Check if it's the last character
-        total += roman_to_int[roman[i]]
+        total += roman_to_int[c2]
     
 print(total)
