@@ -33,11 +33,6 @@ roman_to_int = {
         }
 
 roman = input("Roman Number: ")
-# Check user input for valid Roman numeral characters
-for char in roman:
-    if char not in roman_to_int:
-        print("Invalid Roman numeral")
-        exit()
 
 total = 0
 i = 0

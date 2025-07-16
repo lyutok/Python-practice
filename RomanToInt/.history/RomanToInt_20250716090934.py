@@ -33,11 +33,6 @@ roman_to_int = {
         }
 
 roman = input("Roman Number: ")
-# Check user input for valid Roman numeral characters
-for char in roman:
-    if char not in roman_to_int:
-        print("Invalid Roman numeral")
-        exit()
 
 total = 0
 i = 0
@@ -60,5 +55,6 @@ while i < qty-1:
 
     if i == qty - 1:  # Check if it's the last character
         total += roman_to_int[c2]
+    
     
 print(total)
