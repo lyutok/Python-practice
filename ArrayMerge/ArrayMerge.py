@@ -28,3 +28,20 @@ Explanation: The arrays we are merging are [] and [1].
 The result of the merge is [1].
 Note that because m = 0, there are no elements in nums1. The 0 is only there to ensure the merge result can fit in nums1.
 """
+
+def merge(nums1, m, nums2, n):
+
+    for i in range(len(nums1)):
+        if nums1[i] == 0:
+            n -= 1
+            nums1[i] = nums2[n]
+            
+    nums1.sort()
+
+# Example usage
+nums1 = [1,2,3,0,0,0]
+m = 3
+nums2 = [2,5,6]
+n = 3  
+merge(nums1, m, nums2, n)
+print(nums1)
